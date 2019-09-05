@@ -10,7 +10,7 @@ import (
 func handler(w http.ResponseWriter, r *http.Request) {
 	// Arbitrary sleep so that we can demonstrate autoscaler
 	time.Sleep(100 * time.Millisecond)
-	fmt.Fprintln(w, "Hi there, I'm running in Kubernetes openipd github master branch")
+	fmt.Fprintln(w, "Hi there, I'm running in Kubernetes and working for BMG")
 }
 
 func main() {
