@@ -1,8 +1,0 @@
-services:
-  demo-wnm:
-    build:
-      repo: https://github.com/openipd/rio-demo
-      branch: master
-    ports:
-    - 8080/http
-    scale: 1
