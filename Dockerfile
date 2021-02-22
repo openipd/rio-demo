@@ -1,4 +1,4 @@
-FROM golang
+FROM golang:1.14
 ENV GOPATH="/go"
 RUN ["mkdir", "-p", "/go/src/github.com/openipd/rio-demo"]
 COPY * /go/src/github.com/openipd/rio-demo/
