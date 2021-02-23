@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-        "os"
 	"log"
 	"net/http"
+	"os"
 	"time"
 )
 
@@ -12,12 +12,12 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	// Arbitrary sleep so that we can demonstrate autoscaler
 	time.Sleep(100 * time.Millisecond)
 
-        name, err := os.Hostname()
-        if err != nil {
-            panic(err)
-        }
+	name, err := os.Hostname()
+	if err != nil {
+		panic(err)
+	}
 
-	fmt.Fprintln(w, "Hi there, I'm running in Kubernetes Pod:", name)
+	fmt.Fprintln(w, "Hi dude, I'm running in Kubernetes Pod:", name)
 }
 
 func main() {
