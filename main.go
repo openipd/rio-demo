@@ -17,7 +17,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		panic(err)
 	}
 
-	fmt.Fprintln(w, "Hi BEN, I'm running in Kubernetes Pod:", name)
+	fmt.Fprintln(w, "Hi there, I'm running in Kubernetes Pod:", name)
 }
 
 func main() {
